@@ -3,63 +3,63 @@
 # See LICENSE.md for details.
 
 """
-Alternative pin mappings for Radxa rock4
-(see https://wiki.radxa.com/Rockpi4/hardware/gpio)
+Alternative pin mappings for Radxa rock5B
+(see https://docs.radxa.com/en/rock5/rock5b/hardware-design/hardware-interface)
 
 Usage:
 
 .. code:: python
-   import radxa.rock5B
+   import radxa.rock5b
    from OPi import GPIO
 
-   GPIO.setmode(radxa.rock5B.BOARD) or GPIO.setmode(radxa.rock5B.BCM)
+   GPIO.setmode(radxa.rock5b.BOARD) or GPIO.setmode(radxa.rock5b.BCM)
 """
 
 # formula: GPIO Bank + Base Num
 # ╔═════════════╦═════════════╦═════════════╦═════════════╗
 # ║  GPIO Bank  ║   Base Num  ║  GPIO Group ║   Base Num  ║        
 # ╠═════════════╬═════════════╬═════════════╬═════════════╣
-# ║  GPIO0 		║     0		  ║     A		║     0       ║
+# ║  GPIO0 		  ║     0		    ║     A		    ║     0       ║  
 # ╠═════════════╬═════════════╬═════════════╬═════════════╣	
-# ║  GPIO1		║     32	  ║     B		║     8		  ║
+# ║  GPIO1		  ║     32	    ║     B	    	║     8  		  ║
 # ╠═════════════╬═════════════╬═════════════╬═════════════╣		
-# ║  GPIO2		║     64	  ║	    C   	║	 16       ║
+# ║  GPIO2	  	║     64	    ║	    C     	║  	   16     ║
 # ╠═════════════╬═════════════╬═════════════╬═════════════╣
-# ║  GPIO3		║     96  	  ║	    D		║    24       ║
+# ║  GPIO3		  ║     96  	  ║	    D	    	║      24     ║
 # ╠═════════════╬═════════════╬═════════════╬═════════════╣
-# ║  GPIO4		║    128      ║             ║             ║
+# ║  GPIO4		  ║    128      ║             ║             ║
 # ╚═════════════╩═════════════╩═════════════╩═════════════╝
 
 
-# Radxa rock5B physical board pin to GPIO pin
+# Radxa rock5C physical board pin to GPIO pin
+#https://docs.radxa.com/en/rock5/rock5b/hardware-design/hardware-interface
 BOARD = {
-    3:      71,
-    5:      72,
-    7:      75,
-    11:     146,
-    13:     150,
-    15:     149,
-    19:     40,
-    21:     39,
-    23:     41,
-    27:     64,
-    29:     74,
-    31:     73,
-    33:     76,
-    35:     133,
-    37:     158,
-    8:      148,
-    10:     147,
-    12:     131,
-    16:     154,
-    18:     156,
-    22:     157,
-    24:     42,
-    28:     65,
-    32:     112,
-    36:     132,
-    38:     134,
-    40:     135,
+    3:      139,
+    5:      138,
+    7:      115,
+    11:     113,
+    13:     111,
+    15:     112,
+    19:     42,
+    21:     41,
+    23:     43,
+    27:     150,
+    29:     63,
+    31:     47,
+    33:     103,
+    35:     110,
+    8:      13,
+    10:     14,
+    12:     109,
+    16:     100,
+    18:     148,
+    24:     44,
+    26:     45,
+    28:     114,
+    32:     114,
+    36:     105,
+    38:     106,
+    40:     107,
 }
 
 # No reason for BCM mapping, keeping it for compatibility
