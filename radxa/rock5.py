@@ -3,8 +3,9 @@
 # See LICENSE.md for details.
 
 """
-Alternative pin mappings for Radxa rock5C
-(see https://docs.radxa.com/en/rock5/rock5c/hardware-design/hardware-interface)
+Alternative pin mappings for Radxa rock5C and rock5A
+(see https://docs.radxa.com/en/rock5/rock5c/hardware-design/hardware-interface
+     https://docs.radxa.com/en/rock5/rock5a/hardware-design/hardware-interface )
 
 Usage:
 
@@ -31,8 +32,9 @@ Usage:
 # ╚═════════════╩═════════════╩═════════════╩═════════════╝
 
 
-# Radxa rock5C physical board pin to GPIO pin
+# Radxa rock5C and rock5A physical board pin to GPIO pin
 #https://docs.radxa.com/en/rock5/rock5c/hardware-design/hardware-interface
+#https://docs.radxa.com/en/rock5/rock5a/hardware-design/hardware-interface
 BOARD = {
  3:      63,     # GPIO1_D7 | UART1_CTSN_M1 | I2C8_SDA_M2 | PWM15_IR_M3
     5:      62,     # GPIO1_D6 | UART1_RTSN_M1 | I2C8_SCL_M2 | PWM14_M2
