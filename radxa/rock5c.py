@@ -3,16 +3,16 @@
 # See LICENSE.md for details.
 
 """
-Alternative pin mappings for Radxa rock4
-(see https://docs.radxa.com/en/rock5/rock5b/hardware-design/hardware-interface)
+Alternative pin mappings for Radxa rock5C
+(see https://docs.radxa.com/en/rock5/rock5c/hardware-design/hardware-interface)
 
 Usage:
 
 .. code:: python
-   import radxa.rock5C
+   import radxa.rock5c
    from OPi import GPIO
 
-   GPIO.setmode(radxa.rock5C.BOARD) or GPIO.setmode(radxa.rock5C.BCM)
+   GPIO.setmode(radxa.rock5c.BOARD) or GPIO.setmode(radxa.rock5c.BCM)
 """
 
 # formula: GPIO Bank + Base Num
@@ -32,34 +32,34 @@ Usage:
 
 
 # Radxa rock5C physical board pin to GPIO pin
-#https://docs.radxa.com/en/rock5/rock5b/hardware-design/hardware-interface
+#https://docs.radxa.com/en/rock5/rock5c/hardware-design/hardware-interface
 BOARD = {
-    3:      139,
-    5:      138,
-    7:      115,
-    11:     113,
-    13:     111,
-    15:     112,
-    19:     42,
-    21:     41,
-    23:     43,
-    27:     150,
-    29:     63,
-    31:     47,
-    33:     103,
-    35:     110,
+    3:      63,
+    5:      62,
+    7:      43,
+    11:     139,
+    13:     138,
+    15:     140,
+    19:     33,
+    21:     32,
+    23:     34,
+    27:     23,
+    29:     42,
+    31:     41,
+    33:     44,
+    35:     128,
     8:      13,
     10:     14,
-    12:     109,
-    16:     100,
-    18:     148,
-    24:     44,
-    26:     45,
-    28:     114,
-    32:     114,
-    36:     105,
-    38:     106,
-    40:     107,
+    12:     129,
+    16:     37,
+    18:     40,
+    24:     45,
+    26:     35,
+    28:     36,
+    32:     136,
+    36:     130,
+    38:     133,
+    40:     137,
 }
 
 # No reason for BCM mapping, keeping it for compatibility
