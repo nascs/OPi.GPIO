@@ -65,6 +65,10 @@ BOARD = {
     38:     133,    # GPIO4_A5 | UART3_TX_M2 | I2C3_SDA_M2 | I2S1_SDI0_M0
     40:     137,    # GPIO4_B1 | UART8_RX_M0 | I2C6_SCL_M3 | SPDIF1_TX_M1 | I2S1_SDO0_M0 | SPI0_CS1_M1
 }
-
+"""PWM PINs:
+(Check https://dl.radxa.com/rock5/5c/docs/hw/v1100/radxa_rock_5c_schematic_v1100.pdf page 11/25 & 15/25)
+PWM3_IR_M1 GPIO3_B2 = 3*32+(B=1)*8+2=106
+PWMFan: 106
+""""
 # No reason for BCM mapping, keeping it for compatibility
 BCM = BOARD
